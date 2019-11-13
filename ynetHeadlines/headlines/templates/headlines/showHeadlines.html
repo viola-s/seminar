@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="utf-8"/>
+    <title>כותרות ראשיות Ynet</title>
+</head>
+<body>
+<div class="main" style="margin-left: 100px; margin-right: 100px; text-align: center;">
+<h1>כותרות ראשיות <a href="https://ynet.co.il" target="_blank">ynet.co.il</a></h1>
+{% for dataItem in data %}
+    <div class="headline" style="padding-top: 20px; padding-bottom: 20px;">
+<h4>{{ dataItem.title }}</h4>
+<p>{{ dataItem.subtitle }}</p>
+        </div>
+{% endfor %}
+</div>
+</body>
+</html>
